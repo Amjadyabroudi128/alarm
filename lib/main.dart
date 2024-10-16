@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:intl/intl.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -26,7 +26,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   var currentTime;
-
   @override
   void initState() {
     currentTime = DateTime.now();
@@ -43,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
                  Icons.access_alarm_outlined,
                  size: 90,
                ),
-              Text("${currentTime}")
+              Text("${DateFormat("Hm").format(currentTime)}")
             ],
           ),
         ),
