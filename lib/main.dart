@@ -25,10 +25,15 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  var currentTime;
 
   @override
+  void initState() {
+    currentTime = DateTime.now();
+  }
+  @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       body: Center(
         child: SingleChildScrollView(
           child: Column(
@@ -37,7 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
                Icon(
                  Icons.access_alarm_outlined,
                  size: 90,
-               )
+               ),
+              Text("${currentTime}")
             ],
           ),
         ),
