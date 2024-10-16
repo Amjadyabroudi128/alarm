@@ -10,6 +10,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   var currentTime;
+  final hourandMinute = DateFormat("Hm");
   @override
   void initState() {
     currentTime = DateTime.now();
@@ -26,7 +27,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Icons.access_alarm_outlined,
                 size: 90,
               ),
-              Text("${DateFormat("Hm").format(currentTime)}",
+              Text("${hourandMinute.format(currentTime)}",
                 style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),)
             ],
           ),
