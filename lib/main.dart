@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
                  Icons.access_alarm_outlined,
                  size: 90,
                ),
-              Text("${DateFormat("H").format(currentTime)}")
+              Text("${DateFormat("Hm").format(currentTime)}")
             ],
           ),
         ),
