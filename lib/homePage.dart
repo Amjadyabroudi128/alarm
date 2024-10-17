@@ -13,6 +13,11 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   var currentTime;
   final hourandMinute = DateFormat("Hm");
+  Future<void> _selectDate() async {
+    await showDatePicker(context: context,
+        firstDate: DateTime.now(),
+        lastDate: DateTime(2100));
+}
   @override
   void initState() {
     currentTime = DateTime.now();
@@ -27,7 +32,8 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               clock,
               Text("${hourandMinute.format(currentTime)}",
-                style: timeStyle,)
+                style: timeStyle,),
+
             ],
           ),
         ),
