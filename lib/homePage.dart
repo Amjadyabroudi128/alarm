@@ -27,7 +27,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               clock,
               Text("${hourandMinute.format(currentTime)}",
-                style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),)
+                style: timeStyle,)
             ],
           ),
         ),
