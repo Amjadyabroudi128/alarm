@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
+import 'consts.dart';
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key,});
 
@@ -23,10 +25,7 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Icon(
-                Icons.access_alarm_outlined,
-                size: 90,
-              ),
+              clock,
               Text("${hourandMinute.format(currentTime)}",
                 style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),)
             ],
