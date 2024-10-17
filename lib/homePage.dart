@@ -11,17 +11,20 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  var currentTime;
+  var currentTime = DateTime.now();
+   TimeOfDay selectedTime = TimeOfDay.now();
   final hourandMinute = DateFormat("Hm");
   Future<void> _selectDate() async {
-    await showDatePicker(context: context,
-        firstDate: DateTime.now(),
-        lastDate: DateTime(2100));
+    final TimeOfDay? timeOfDay = await showTimePicker(context: context,
+        initialTime: selectedTime,
+      initialEntryMode: TimePickerEntryMode.dial
+    );
+    if(timeOfDay != null) {
+      setState(() {
+        selectedTime = timeOfDay;
+      });
+    }
 }
-  @override
-  void initState() {
-    currentTime = DateTime.now();
-  }
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
@@ -34,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Text("${hourandMinute.format(currentTime)}",
                 style: timeStyle,),
               ElevatedButton(
-                onPressed: (){},
+                onPressed: _selectDate,
                 child: Text("select Time"),
               )
             ],
