@@ -33,7 +33,10 @@ class _MyHomePageState extends State<MyHomePage> {
               clock,
               Text("${hourandMinute.format(currentTime)}",
                 style: timeStyle,),
-
+              ElevatedButton(
+                onPressed: (){},
+                child: Text("select Time"),
+              )
             ],
           ),
         ),
