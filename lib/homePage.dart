@@ -39,8 +39,12 @@ class _MyHomePageState extends State<MyHomePage> {
               Text("${hourandMinute.format(currentTime)}",
                 style: timeStyle,),
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.purple,
+                  minimumSize: Size(180, 49)
+                ),
                 onPressed: _selectDate,
-                child: Text("select Time"),
+                child: Text("select Time", style: TextStyle(color: Colors.white, fontSize: 20),),
 
               )
             ],
