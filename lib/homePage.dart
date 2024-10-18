@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:intl/intl.dart';
 
 import 'consts.dart';
@@ -11,6 +12,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  final FlutterLocalNotificationsPlugin myNotifications = FlutterLocalNotificationsPlugin();
   var currentTime = DateTime.now();
    TimeOfDay selectedTime = TimeOfDay.now();
   final hourandMinute = DateFormat("Hm");
@@ -39,6 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ElevatedButton(
                 onPressed: _selectDate,
                 child: Text("select Time"),
+
               )
             ],
           ),
