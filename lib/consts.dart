@@ -8,3 +8,6 @@ TextStyle timeStyle = const TextStyle(
     fontSize: 40, fontWeight: FontWeight.bold
 );
 Size btnSize = Size(180, 49);
+
+// colors
+ Color btnClr = Colors.purple;
