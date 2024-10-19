@@ -1,3 +1,4 @@
+import 'package:alarm/widgets/timeText.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:intl/intl.dart';
@@ -36,8 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               clock,
-              Text("${hourandMinute.format(currentTime)}",
-                style: timeStyle,),
+              TimeText(hourandMinute: hourandMinute, currentTime: currentTime),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: btnClr,
@@ -54,3 +54,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
