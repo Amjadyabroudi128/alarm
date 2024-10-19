@@ -7,3 +7,4 @@ Icon clock = const Icon(Icons.access_alarm_outlined, size: 90,);
 TextStyle timeStyle = const TextStyle(
     fontSize: 40, fontWeight: FontWeight.bold
 );
+Size btnSize = Size(180, 49);
