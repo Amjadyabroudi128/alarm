@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.purple,
-                  minimumSize: Size(180, 49)
+                  minimumSize: btnSize
                 ),
                 onPressed: _selectDate,
                 child: Text("select Time", style: TextStyle(color: Colors.white, fontSize: 20),),
