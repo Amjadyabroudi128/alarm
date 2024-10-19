@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   minimumSize: btnSize
                 ),
                 onPressed: _selectDate,
-                child: Text("select Time", style: TextStyle(color: Colors.white, fontSize: 20),),
+                child: Text("select Time", style: btnStyle,),
 
               )
             ],
