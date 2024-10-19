@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: timeStyle,),
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.purple,
+                  backgroundColor: btnClr,
                   minimumSize: btnSize
                 ),
                 onPressed: _selectDate,
