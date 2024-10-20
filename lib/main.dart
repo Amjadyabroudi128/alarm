@@ -1,8 +1,11 @@
+import 'package:alarm/notification/NotificationHelper.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-
+import 'package:timezone/data/latest.dart' as tz;
 import 'homePage.dart';
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Notificationhelper.init();
+  tz.initializeTimeZones();
   runApp(const MyApp());
 }
 
