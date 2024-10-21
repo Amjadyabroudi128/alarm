@@ -41,4 +41,7 @@ class Notificationhelper{
  static Future<void> onDidReceiveNotification(NotificationResponse notificationResponse) async {
 
  }
+ static Future cancelNoti(int id) async  {
+  await myNotification.cancel(id);
+ }
 }
