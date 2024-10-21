@@ -40,6 +40,13 @@ class _MyHomePageState extends State<MyHomePage> {
               clock,
               TimeText(hourandMinute: hourandMinute, currentTime: currentTime),
               selectTimebtn(time: time),
+              SizedBox(height: 7,),
+              ElevatedButton(
+                onPressed: (){
+                  Notificationhelper.cancelNoti(0);
+                },
+                child: Text("Cancel Alarm"),
+              )
             ],
           ),
         ),
