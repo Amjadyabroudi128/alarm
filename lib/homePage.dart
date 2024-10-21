@@ -1,3 +1,4 @@
+import 'package:alarm/widgets/selectDate.dart';
 import 'package:alarm/widgets/timeText.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -23,37 +24,12 @@ class _MyHomePageState extends State<MyHomePage> {
     Notificationhelper.init();
   }
 
-  Future<void> _selectDate() async {
-    final TimeOfDay? timeOfDay = await showTimePicker(
-      context: context,
-      initialTime: selectedTime,
-      initialEntryMode: TimePickerEntryMode.dial,
-    );
-    if (timeOfDay != null) {
-      setState(() {
-        selectedTime = timeOfDay;
-      });
 
-      final now = DateTime.now();
-      final DateTime scheduledDate = DateTime(
-        now.year,
-        now.month,
-        now.day,
-        timeOfDay.hour,
-        timeOfDay.minute,
-      );
-      // Schedule the notification
-      await Notificationhelper.scheduledNoti(
-          "good day",  // Title of the notification
-          "it's time to Wake Up",  // Body of the notification
-          scheduledDate,  // The time the notification should trigger
-          true  // Android allow while idle
-      );
-    }
-  }
+  final PickTime time = PickTime();
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       body: Center(
         child: SingleChildScrollView(
@@ -67,7 +43,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   backgroundColor: btnClr,
                   minimumSize: btnSize,
                 ),
-                onPressed: _selectDate,
+                onPressed: () {
+                  time.selectDate(context);
+                },
                 child: Text("Select Time", style: btnStyle,),
               ),
             ],
