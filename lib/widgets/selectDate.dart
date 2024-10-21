@@ -4,9 +4,7 @@ import 'package:intl/intl.dart';
 import '../notification/NotificationHelper.dart';
 class PickTime {
   Future<void> selectDate(BuildContext context) async {
-    var currentTime = DateTime.now();
     TimeOfDay selectedTime = TimeOfDay.now();
-    final hourandMinute = DateFormat("Hm");
     final TimeOfDay? timeOfDay = await showTimePicker(
       context: context,
       initialTime: selectedTime,
