@@ -14,10 +14,6 @@ class selectTimebtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        backgroundColor: btnClr,
-        minimumSize: btnSize,
-      ),
       onPressed: () {
         time.selectDate(context);
       },
