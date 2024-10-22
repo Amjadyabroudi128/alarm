@@ -1,4 +1,5 @@
 import 'package:alarm/notification/NotificationHelper.dart';
+import 'package:alarm/themes/ThemeClass.dart';
 import 'package:flutter/material.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'homePage.dart';
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: MyTheme.theme,
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       home:  MyHomePage(),
