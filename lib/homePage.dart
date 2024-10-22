@@ -46,7 +46,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   Notificationhelper.cancelNoti(0);
                 },
                 child: Text("Cancel Alarm"),
-              )
+              ),
+              Text("${selectedTime!.format(context)}")
             ],
           ),
         ),
