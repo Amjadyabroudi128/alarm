@@ -9,11 +9,12 @@ class cancelBtn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String cancel = "cancel Alarm";
     return ElevatedButton(
       onPressed: (){
         Notificationhelper.cancelNoti(0);
       },
-      child: Text("Cancel Alarm"),
+      child: Text(cancel),
     );
   }
 }
