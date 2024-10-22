@@ -13,3 +13,4 @@ Size btnSize = Size(180, 49);
 
 // colors
  Color btnClr = Colors.purple;
+ SizedBox mySpace = SizedBox(height: 7,);
