@@ -1,3 +1,4 @@
+import 'package:alarm/widgets/cancelbtn.dart';
 import 'package:alarm/widgets/selectBtn.dart';
 import 'package:alarm/widgets/selectDate.dart';
 import 'package:alarm/widgets/timeText.dart';
@@ -41,12 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
               TimeText(hourandMinute: hourandMinute, currentTime: currentTime),
               selectTimebtn(time: time),
               SizedBox(height: 7,),
-              ElevatedButton(
-                onPressed: (){
-                  Notificationhelper.cancelNoti(0);
-                },
-                child: Text("Cancel Alarm"),
-              ),
+              cancelBtn(),
             ],
           ),
         ),
@@ -54,3 +50,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+
