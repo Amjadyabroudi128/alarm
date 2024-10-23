@@ -1,3 +1,4 @@
+import 'package:alarm/components/ElevatedButton.dart';
 import 'package:alarm/consts.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class cancelBtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String cancel = "cancel Alarm";
-    return ElevatedButton(
+    return myBtn(
       onPressed: (){
         Notificationhelper.cancelNoti(0);
       },
