@@ -14,11 +14,12 @@ class selectTimebtn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String select = "Select Time ";
     return myBtn(
       onPressed: () {
         time.selectDate(context);
       },
-      child: Text("Select Time", style: btnStyle,),
+      child: Text(select, style: btnStyle,),
     );
   }
 }
