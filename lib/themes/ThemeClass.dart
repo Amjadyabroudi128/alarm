@@ -12,14 +12,17 @@ class MyTheme {
    )
   ),
    timePickerTheme: TimePickerThemeData(
-     cancelButtonStyle: ButtonStyle(
-       textStyle: WidgetStateProperty.all<TextStyle>(
-         TextStyle(
-           color: Colors.red
-         )
-       ),
-         // backgroundColor: WidgetStateProperty.resolveWith((states) => Colors.red)
+     timeSelectorSeparatorColor: WidgetStateProperty.all<Color>(
+       Colors.blue
      )
+     // cancelButtonStyle: ButtonStyle(
+     //   textStyle: WidgetStateProperty.all<TextStyle>(
+     //     TextStyle(
+     //       color: Colors.red
+     //     )
+     //   ),
+     //     // backgroundColor: WidgetStateProperty.resolveWith((states) => Colors.red)
+     // )
    )
  );
  }
