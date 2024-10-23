@@ -1,3 +1,4 @@
+import 'package:alarm/components/ElevatedButton.dart';
 import 'package:alarm/widgets/selectDate.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class selectTimebtn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
+    return myBtn(
       onPressed: () {
         time.selectDate(context);
       },
