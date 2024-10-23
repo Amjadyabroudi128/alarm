@@ -10,6 +10,7 @@ class MyTheme {
     backgroundColor: btnClr,
     minimumSize: btnSize,
    )
-  )
+  ),
+   timePickerTheme: TimePickerThemeData()
  );
  }
