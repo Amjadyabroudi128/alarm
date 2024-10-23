@@ -11,6 +11,15 @@ class MyTheme {
     minimumSize: btnSize,
    )
   ),
-   timePickerTheme: TimePickerThemeData()
+   timePickerTheme: TimePickerThemeData(
+     cancelButtonStyle: ButtonStyle(
+       textStyle: WidgetStateProperty.all<TextStyle>(
+         TextStyle(
+           color: Colors.red
+         )
+       ),
+         // backgroundColor: WidgetStateProperty.resolveWith((states) => Colors.red)
+     )
+   )
  );
  }
