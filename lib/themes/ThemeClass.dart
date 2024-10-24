@@ -12,13 +12,9 @@ class MyTheme {
    )
   ),
    timePickerTheme: TimePickerThemeData(
-     timeSelectorSeparatorColor: WidgetStateProperty.all<Color>(
-       Colors.blue
-     ),
+     timeSelectorSeparatorColor: seperator,
      cancelButtonStyle: btn(Colors.red),
-     confirmButtonStyle: ButtonStyle(
-       foregroundColor: WidgetStateProperty.all<Color>(Colors.green),
-     )
+     confirmButtonStyle: btn(Colors.green)
    )
  );
  }
