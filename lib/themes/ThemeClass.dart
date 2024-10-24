@@ -13,7 +13,7 @@ class MyTheme {
   ),
    timePickerTheme: TimePickerThemeData(
      timeSelectorSeparatorColor: seperator,
-     cancelButtonStyle: btn(Colors.red),
+     cancelButtonStyle: btn(cancel),
      confirmButtonStyle: btn(Colors.green)
    )
  );
