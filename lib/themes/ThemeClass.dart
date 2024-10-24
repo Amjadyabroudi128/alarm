@@ -15,9 +15,7 @@ class MyTheme {
      timeSelectorSeparatorColor: WidgetStateProperty.all<Color>(
        Colors.blue
      ),
-     cancelButtonStyle: ButtonStyle(
-       foregroundColor: WidgetStateProperty.all<Color>(Colors.red),
-     ),
+     cancelButtonStyle: btn(Colors.red),
      confirmButtonStyle: ButtonStyle(
        foregroundColor: WidgetStateProperty.all<Color>(Colors.green),
      )
