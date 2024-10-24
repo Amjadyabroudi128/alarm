@@ -14,7 +14,9 @@ class MyTheme {
    timePickerTheme: TimePickerThemeData(
      timeSelectorSeparatorColor: WidgetStateProperty.all<Color>(
        Colors.blue
-     )
+     ),
+     confirmButtonStyle: ButtonStyle(
+       foregroundColor: WidgetStateProperty.all<Color>(Colors.green)
      // cancelButtonStyle: ButtonStyle(
      //   textStyle: WidgetStateProperty.all<TextStyle>(
      //     TextStyle(
@@ -23,6 +25,7 @@ class MyTheme {
      //   ),
      //     // backgroundColor: WidgetStateProperty.resolveWith((states) => Colors.red)
      // )
+ )
    )
  );
  }
