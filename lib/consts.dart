@@ -20,3 +20,4 @@ Size btnSize = Size(180, 49);
    foregroundColor: WidgetStateProperty.all<Color>(color),
   );
  }
+ final WidgetStateProperty<Color> seperator = WidgetStateProperty.all(Colors.brown);
