@@ -15,17 +15,12 @@ class MyTheme {
      timeSelectorSeparatorColor: WidgetStateProperty.all<Color>(
        Colors.blue
      ),
+     cancelButtonStyle: ButtonStyle(
+       foregroundColor: WidgetStateProperty.all<Color>(Colors.red),
+     ),
      confirmButtonStyle: ButtonStyle(
-       foregroundColor: WidgetStateProperty.all<Color>(Colors.green)
-     // cancelButtonStyle: ButtonStyle(
-     //   textStyle: WidgetStateProperty.all<TextStyle>(
-     //     TextStyle(
-     //       color: Colors.red
-     //     )
-     //   ),
-     //     // backgroundColor: WidgetStateProperty.resolveWith((states) => Colors.red)
-     // )
- )
+       foregroundColor: WidgetStateProperty.all<Color>(Colors.green),
+     )
    )
  );
  }
