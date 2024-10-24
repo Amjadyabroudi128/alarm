@@ -14,3 +14,9 @@ Size btnSize = Size(180, 49);
 // colors
  Color btnClr = Colors.purple;
  SizedBox mySpace = SizedBox(height: 7,);
+
+ ButtonStyle btn(Color color){
+  return ButtonStyle(
+   foregroundColor: WidgetStateProperty.all<Color>(color),
+  );
+ }
