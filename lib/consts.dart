@@ -14,6 +14,7 @@ Size btnSize = Size(180, 49);
 // colors
  Color btnClr = Colors.purple;
  Color cancel = Colors.red;
+ Color confirm = Colors.green;
  SizedBox mySpace = SizedBox(height: 7,);
 
  ButtonStyle btn(Color color){
