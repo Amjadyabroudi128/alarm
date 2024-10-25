@@ -8,7 +8,7 @@ Icon clock = const Icon(Icons.access_alarm_outlined, size: 90,);
 TextStyle timeStyle = const TextStyle(
     fontSize: 40, fontWeight: FontWeight.bold
 );
-TextStyle btnStyle = const TextStyle(color: Colors.white, fontSize: 20);
+TextStyle btnStyle =  TextStyle(color: btnText, fontSize: 20);
 Size btnSize = Size(180, 49);
 
 // colors
@@ -16,6 +16,7 @@ Size btnSize = Size(180, 49);
  Color cancel = Colors.red;
  Color confirm = Colors.green;
  Color seperate = Colors.brown;
+ Color btnText = Colors.white;
  SizedBox mySpace = SizedBox(height: 7,);
 
  ButtonStyle btn(Color color){
