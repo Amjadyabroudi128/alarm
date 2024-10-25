@@ -15,6 +15,7 @@ Size btnSize = Size(180, 49);
  Color btnClr = Colors.purple;
  Color cancel = Colors.red;
  Color confirm = Colors.green;
+ Color seperate = Colors.brown;
  SizedBox mySpace = SizedBox(height: 7,);
 
  ButtonStyle btn(Color color){
@@ -22,4 +23,4 @@ Size btnSize = Size(180, 49);
    foregroundColor: WidgetStateProperty.all<Color>(color),
   );
  }
- final WidgetStateProperty<Color> seperator = WidgetStateProperty.all(Colors.brown);
+ final WidgetStateProperty<Color> seperator = WidgetStateProperty.all(seperate);
