@@ -21,7 +21,7 @@ class _cancelBtnState extends State<cancelBtn> {
     String cancel = "cancel Alarm";
     return myBtn(
       onPressed: (){
-        time.ShowDialog(context);
+        time.showCancelDialog(context);
       },
       child: Text(cancel, style: btnStyle,),
     );
