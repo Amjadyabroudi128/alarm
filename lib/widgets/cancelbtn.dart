@@ -1,6 +1,5 @@
 import 'package:alarm/components/ElevatedButton.dart';
 import 'package:alarm/consts.dart';
-import 'package:alarm/widgets/selectDate.dart';
 import 'package:flutter/material.dart';
 
 import '../notification/NotificationHelper.dart';
@@ -15,13 +14,12 @@ class cancelBtn extends StatefulWidget {
 }
 
 class _cancelBtnState extends State<cancelBtn> {
-  final PickTime time = PickTime();
   @override
   Widget build(BuildContext context) {
     String cancel = "cancel Alarm";
     return myBtn(
       onPressed: (){
-        time.showCancelDialog(context);
+        Notificationhelper.cancelNoti(0);
       },
       child: Text(cancel, style: btnStyle,),
     );
