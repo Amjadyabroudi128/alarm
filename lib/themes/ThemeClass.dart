@@ -15,6 +15,7 @@ class MyTheme {
      backgroundColor: Colors.grey[200],
      timeSelectorSeparatorColor: seperator,
      cancelButtonStyle: btn(cancel),
+     dialHandColor: Colors.black,
      confirmButtonStyle: btn(confirm),
      hourMinuteTextStyle: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
    )
