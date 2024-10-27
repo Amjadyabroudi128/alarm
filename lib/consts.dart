@@ -18,6 +18,7 @@ Size btnSize = Size(180, 49);
  Color seperate = Colors.brown;
  Color btnText = Colors.white;
  Color? clockBG = Colors.grey[200];
+ Color? dayPeriod = Colors.purple[100];
  SizedBox mySpace = SizedBox(height: 7,);
 
  ButtonStyle btn(Color color){
