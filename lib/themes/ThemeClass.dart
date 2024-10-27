@@ -17,6 +17,7 @@ class MyTheme {
      cancelButtonStyle: btn(cancel),
      dialHandColor: Colors.black,
      confirmButtonStyle: btn(confirm),
+     dayPeriodColor: Colors.purple[100],
      hourMinuteTextStyle: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
    )
  );
