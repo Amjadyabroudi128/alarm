@@ -12,7 +12,7 @@ class MyTheme {
    )
   ),
    timePickerTheme: TimePickerThemeData(
-     backgroundColor: Colors.grey[200],
+     backgroundColor: clockBG,
      timeSelectorSeparatorColor: seperator,
      cancelButtonStyle: btn(cancel),
      dialHandColor: Colors.black,
