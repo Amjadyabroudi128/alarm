@@ -14,7 +14,8 @@ class MyTheme {
    timePickerTheme: TimePickerThemeData(
      timeSelectorSeparatorColor: seperator,
      cancelButtonStyle: btn(cancel),
-     confirmButtonStyle: btn(confirm)
+     confirmButtonStyle: btn(confirm),
+     hourMinuteTextStyle: TextStyle(fontSize: 40, fontWeight: FontWeight.bold)
    )
  );
  }
