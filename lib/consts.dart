@@ -10,7 +10,7 @@ TextStyle timeStyle = const TextStyle(
 );
 TextStyle btnStyle =  TextStyle(color: btnText, fontSize: 20);
 Size btnSize = Size(180, 49);
-
+TextStyle HourMinute =  TextStyle(fontSize: 40, fontWeight: FontWeight.bold);
 // colors
  Color btnClr = Colors.purple;
  Color cancel = Colors.red;

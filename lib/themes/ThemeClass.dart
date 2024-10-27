@@ -18,7 +18,7 @@ class MyTheme {
      dialHandColor: Colors.black,
      confirmButtonStyle: btn(confirm),
      dayPeriodColor: dayPeriod,
-     hourMinuteTextStyle: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+     hourMinuteTextStyle: HourMinute
    )
  );
  }
