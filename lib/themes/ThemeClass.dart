@@ -12,10 +12,11 @@ class MyTheme {
    )
   ),
    timePickerTheme: TimePickerThemeData(
+     backgroundColor: Colors.grey[200],
      timeSelectorSeparatorColor: seperator,
      cancelButtonStyle: btn(cancel),
      confirmButtonStyle: btn(confirm),
-     hourMinuteTextStyle: TextStyle(fontSize: 40, fontWeight: FontWeight.bold)
+     hourMinuteTextStyle: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
    )
  );
  }
